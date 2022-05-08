@@ -130,7 +130,7 @@ h1{
 
 /* Fourth Section */
 #section-4{
-    padding: 5rem 8rem;
+    padding: 5rem 6rem;
 }
 #section-4-grid{
     margin-top:5rem;
@@ -380,11 +380,11 @@ input{
 }
 #last-section>p{
     margin-top: 1.6rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     font-size: 1.6rem;
 }
 #last-section-grid{
-    padding-top: 5rem;
+    padding-top: 2rem;
     display:grid;
     grid-template-columns: 33% 33% 33%;
     text-align: center;
@@ -439,25 +439,61 @@ footer>div>p{
 }
 
 @media (max-width: 768px){
-    #section-2, #section-4-grid, #section-5-grid, #section-6-grid, #section-8-grid, #last-section-grid, footer {
-        grid-template-columns: 100%;
-        row-gap: 2rem;
-    }
-    #section-3-grid{
-        grid-template-columns: 50% 50%;
-        column-gap: 2rem;
-        row-gap: 2rem;
-    }
-    .overlay {
-        padding: 30px 100px;
-    }
     html{
         font-size: 8px;
-    }
-    #logo{
-        text-align: left;
+        width: 100vw;
     }
     #navbar{
         display: none;
+    }
+    #section-2{
+        grid-template-columns: 100%;
+        row-gap: 5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #section-3-grid{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 20% 20%;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    #section-4-grid{
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+    }
+    #section-5-grid{
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+    }
+    #section-6{
+        padding: 5rem 5rem;
+    }
+    #section-6-grid{
+        grid-template-columns: 100%;
+        row-gap: 3rem;
+    }
+    #section-8{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    #section-8-grid{
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+    }
+    #last-section{
+        padding:5rem 5rem;
+    }
+    #last-section-grid{
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+        text-align: center;
+    }
+    footer{
+        display: block;
+    }
+    #spacer{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
