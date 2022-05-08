@@ -1,0 +1,463 @@
+*{
+    font-family: mulish;
+    text-align: center;
+    margin:0;
+    color: #5B5B5B;
+}
+html{
+    font-size: 10px;
+}
+h2{
+    font-size: 3rem;
+}
+
+/* Top Section */
+header{
+    background-image: url(images/Background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+}
+.overlay {
+    padding: 3rem 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    position: relative;
+    z-index: 1;
+  }
+#logoNav{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+#logo{
+    color:white;
+    font-size: 2.4rem;
+}
+#logo>span{
+    color:#0052FF;
+}
+#navbar>ul>li{
+    display: inline;
+    padding-left: 7rem;
+}
+#navbar>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+main{
+    padding-top: 25rem;
+    color:white;
+    padding-bottom: 25rem;
+    
+}
+.text1{
+    font-size: 4.4rem;
+    color: white;
+}
+h1{
+    font-size: 8rem;
+    color: white;
+}
+.text2{
+    font-size: 2.2rem;
+    color: white;
+}
+#headerbutton{
+    background-color:#0052FF;
+    color: white;
+    margin-top: 3rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+}
+
+/* Second Section */
+#section-2{
+    font-size: 1.6rem;
+    padding: 10rem;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 3%;
+    background-color: white;
+}
+.section-2-icon{
+    height: 8rem;
+    width: 8rem;
+}
+.section-2-header{
+    color:#0052FF;
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+}
+
+/* Third Section */
+#section-3{
+    padding: 5rem;
+    background-color: #F9F9F9;
+}
+#section-3-text{
+    padding-top: 1.6rem;
+    font-size: 1.6rem;
+}
+#section-3-grid{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+.section-3-box{
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section-3-icon{
+    height:8rem;
+    width: 8rem;
+}
+.section-3-grid-text{
+    color:#0052FF;
+    font-size: 2.2rem;
+    padding-top: 1.6rem;
+}
+
+/* Fourth Section */
+#section-4{
+    padding: 5rem 8rem;
+}
+#section-4-grid{
+    margin-top:5rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 4rem;
+}
+.section-4-box{
+    border: 0.2rem solid #0052FF;
+    padding:3rem;
+    text-align: left;
+}
+.section-4-icon{
+    height:8rem;
+    width:8rem;
+}
+.section-4-box>ul>li{
+    list-style-type: '\2713';
+    text-align: left;
+    padding-top: 1.3rem;
+    margin-left: -3rem;
+    padding-left: 1.6rem;
+    font-size: 1.6rem;
+}
+.section-4-text-1{
+    margin-top: 2.5rem;
+    font-size: 2.2rem;
+    color:#0052FF;
+    text-align: left;
+}
+.section-4-text-2{
+    padding-top:2rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+/* Fifth Section */
+#section-5{
+    background-color: #F9F9F9;
+    padding-top: 5rem ;
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+#section-5-grid{
+    margin-top: 5rem;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 8rem;
+}
+#accordion-container{
+    text-align: left;
+}
+.accordion-box{
+    margin-bottom: 1.6rem;
+}
+.accordion{
+    width:100%;
+    text-align: left;
+    margin-right:9rem;
+    padding: 2.5rem 3rem;
+    font-size: 2.2rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 0.1rem solid #0052FF;
+    color:#0052FF;
+}
+.panel{
+    display: none;
+    overflow: hidden;
+}
+.panel-text{
+    text-align: left;
+    margin:1.5rem 3rem;
+    font-size: 1.6rem;
+}
+#accordion-button{
+    background-color: #0052FF;
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    color: white;
+    border:none;
+    margin-top: 3rem;
+}
+
+/* Sixth Section */
+#section-6{
+    padding: 5rem 8rem;
+}
+#section-6-grid{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap:3rem;
+}
+.section-6-box{
+    border: 0.2rem solid #0052FF;
+    border-radius: 1rem;
+    padding-bottom: 3rem;
+}
+.section-6-box-image{
+ width: 100%;
+}
+.dr-name{
+    margin-top: 2.4rem;
+    margin-bottom: 0.8rem;
+    font-size: 2.2rem;
+}
+.dr-title{
+    color: #0052FF;
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+}
+.section-6-schedule{
+    display:flex;
+    justify-content:space-between;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    font-size: 1.6rem;
+}
+.section-6-schedule>div>p{
+    margin-bottom: 1.3rem;
+    text-align: left;
+}
+
+/* Seventh Section */
+#section-7{
+    background-image: url("images/Rectangle\ 41.png");
+}
+#section-7-overlay {
+    padding: 5rem 12rem;
+    background-color: rgba(0, 82, 255, 0.5);
+    top: 0;
+    left: 0;
+    position: relative;
+    z-index: 1;
+  }
+#section-7-header{
+    color:white;
+}
+#section-7-image{
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+#section-7-text{
+    color:white;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+}
+#section-7-ratings{
+    width:fit-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;   
+}
+.rating-icon{
+    height:2.8rem;
+    width:2.8rem;
+}
+#section-7-ratings>div>p{
+    color:white;
+    font-size: 1.6rem;
+}
+#section-7-overlay>div>p{
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+#section-7-overlay>div>p>span{
+    color:#0052FF;
+}
+#section-7-scrolls{
+    display: flex;
+}
+
+/* Eight Section */
+#section-8{
+    padding-left:10rem;
+    padding-right: 10rem;
+}
+#section-8-grid{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 5rem;
+    margin-top: 5rem;
+}
+#section-8-grid>div>h2{
+    margin-bottom: 4rem;
+    text-align: left;
+}
+form>div{
+    text-align: left;
+}
+label{
+    background-color:white;
+    padding: 0px 1.5rem;
+    font-size: 2rem;
+    z-index: 1;
+    position: relative;
+    top:13;
+    left: 45;
+
+}
+input{
+    width: 100%;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    text-align: left;
+    border: 1px solid #0052FF;
+    border-radius: 10px;
+    margin-bottom: 3.2rem;
+    z-index: 0;
+}
+#message{
+    height: 15rem;
+    border: 1px solid #0052FF;
+}
+#submit{
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    background-color: #0052FF;
+    color: white;
+    border-radius: 0px;
+    width: fit-content;
+
+}
+
+/*Iframe Section */
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:608px;
+    width:1348px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:608px;
+    width:1348px;
+}
+
+/*Last Section */
+#last-section{
+    padding:5rem 10rem;
+    text-align: center !important;
+}
+#last-section>p{
+    margin-top: 1.6rem;
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+}
+#last-section-grid{
+    padding-top: 5rem;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+.last-grid-text{
+    margin-left: 2.4rem;
+}
+.last-grid{
+    display: flex;
+}
+.last-grid-icon{
+    height: 4rem;
+    width:4rem;
+}
+.last-grid-text-1{
+    font-size: 2.2rem;
+    margin-bottom: 1.1rem;
+    text-align: left;
+}
+.last-grid-text-2{
+    font-size: 1.6rem;
+    text-align: left;
+}
+.last-grid-text-2>span{
+    color: #0052FF;
+}
+
+/*Footer*/
+footer{
+    padding: 5rem 15rem;
+    background-color: #0052FF;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 6rem;
+}
+footer>div>p{
+    color:white;
+    text-align: left;
+    font-size: 1.6rem;
+}
+#footerlogo{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#socials{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+.social-icons{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+@media (max-width: 768px){
+    #section-2, #section-4-grid, #section-5-grid, #section-6-grid, #section-8-grid, #last-section-grid, footer {
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+    }
+    #section-3-grid{
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .overlay {
+        padding: 30px 100px;
+    }
+    html{
+        font-size: 8px;
+    }
+    #logo{
+        text-align: left;
+    }
+    #navbar{
+        display: none;
+    }
+}
