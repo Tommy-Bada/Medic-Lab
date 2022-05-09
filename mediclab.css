@@ -50,6 +50,11 @@ header{
     color: white;
     font-size: 1.6rem;
 }
+#navbar>ul>li>a:hover{
+    color:#0052FF;
+}
+
+
 main{
     padding-top: 25rem;
     color:white;
@@ -75,6 +80,10 @@ h1{
     padding: 1.5rem 3rem;
     font-size: 1.6rem;
     border: none;
+}
+#headerbutton:hover{
+    background-color: white;
+    color: #0052FF;
 }
 
 /* Second Section */
@@ -215,6 +224,11 @@ h1{
     border:none;
     margin-top: 3rem;
 }
+#accordion-button:hover{
+    color: #0052FF;
+    background-color: white;
+    border: 1px solid #0052FF;
+}
 
 /* Sixth Section */
 #section-6{
@@ -300,12 +314,6 @@ h1{
     color: white;
     margin-bottom: 1rem;
 }
-#section-7-overlay>div>p>span{
-    color:#0052FF;
-}
-#section-7-scrolls{
-    display: flex;
-}
 
 /* Eight Section */
 #section-8{
@@ -356,7 +364,11 @@ input{
     color: white;
     border-radius: 0px;
     width: fit-content;
-
+}
+#submit:hover{
+    color: #0052FF;
+    background-color: white;
+    border: 1px solid #0052FF;
 }
 
 /*Iframe Section */
@@ -490,10 +502,14 @@ footer>div>p{
         text-align: center;
     }
     footer{
-        display: block;
+        grid-template-columns: 100%;
     }
     #spacer{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    #socials{
+        text-align: center;
+        column-gap: 2rem;
     }
 }
