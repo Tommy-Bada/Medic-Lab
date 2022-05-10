@@ -59,7 +59,6 @@ main{
     padding-top: 25rem;
     color:white;
     padding-bottom: 25rem;
-    
 }
 .text1{
     font-size: 4.4rem;
@@ -68,6 +67,7 @@ main{
 h1{
     font-size: 8rem;
     color: white;
+    text-align: center;
 }
 .text2{
     font-size: 2.2rem;
@@ -450,14 +450,59 @@ footer>div>p{
     width: 2.5rem;
 }
 
+
+
+
+/*Smaller Screen */
 @media (max-width: 768px){
     html{
         font-size: 8px;
         width: 100vw;
     }
-    #logo
+    .overlay{
+        padding: 5vh 10vw;
+    }
+    #logoNav{
+        display:block;
+    }
+    #logo{
+        text-align:left;
+        float: left;
+    }
+    #hamburger-menu{
+        float: right;
+    }
+    .hamburger-line{
+        background-color: white;
+        height: 4px;
+        width: 30px;
+        margin-bottom: 2px;
+        border-radius: 5px;
+    }
     #navbar{
-        display: none;
+        position: absolute;
+        top: 70;
+        width:77vw;
+        background-color: white;
+        padding-top:1rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    #navbar>ul{
+        padding-left: 0;
+    }
+    #navbar>ul>li{
+        display: block;
+        text-align: right;
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    #navbar>ul>li>a{
+        color:#5B5B5B;
+    }
+    main{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
     #section-2{
         grid-template-columns: 100%;
