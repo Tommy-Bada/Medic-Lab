@@ -529,11 +529,6 @@ footer>div>p{
         grid-template-columns: 100%;
         row-gap: 2rem;
     }
-    #section-5{
-        background-color: red;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
     #section-5-grid{
         grid-template-columns: 100%;
         row-gap: 2rem;
