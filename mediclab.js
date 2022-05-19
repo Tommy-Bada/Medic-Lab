@@ -17,14 +17,20 @@ accordion[0].addEventListener("click", dropdown);
 accordion[2].addEventListener("click", dropdown);
 accordion[3].addEventListener("click", dropdown);*/
 
+
 //Hamburger Menu
+let menuOpen = false;
 function hamburgerMenu(){
     let navBar = document.getElementById("navbar");
-    if (navBar.style.display === "none"){
-        navBar.style.display = "block";
+    navBar.classList.toggle("navBarOpen")
+    let hamburgerIcon = document.getElementById("hamburger-menu")
+    if(!menuOpen){
+        hamburgerIcon.classList.add('open');
+        menuOpen = true;
     }
     else{
-        navBar.style.display = "none";
+        hamburgerIcon.classList.remove('open')
+        menuOpen = false;
     }
 }
 let menuButton = document.getElementById("hamburger-menu");
