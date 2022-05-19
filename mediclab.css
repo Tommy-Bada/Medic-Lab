@@ -546,10 +546,11 @@ footer>div>p{
         display: block;
         text-align: center;
         padding-left: 0;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
     #navbar>ul>li>a{
         color:#5B5B5B;
+        font-size: 2rem;
     }
 
     /* Top Display */
