@@ -524,7 +524,7 @@ footer>div>p{
     
     #navbar.navBarOpen{
         opacity: 1;
-        transform: translateY(10vh);
+        transform: translateY(11vh);
     }
     #navbar{
         opacity: 0;
