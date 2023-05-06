@@ -430,10 +430,10 @@ footer>div>p{
 
     header{
         transition: all 0.5s ease;
-        height: 70vh;
+        height: 75vh;
     }
     .overlay {
-        height: 70vh;
+        height: 75vh;
         z-index: 1;
       }
     .text1{
