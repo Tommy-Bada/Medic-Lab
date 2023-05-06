@@ -11,39 +11,24 @@ h2{
     font-size: 3rem;
 }
 
+
 /* Top Section */
-header{
-    background-image: url(images/Background.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: auto;
-    width: 100%;
-}
-.overlay {
-    padding: 3rem 10rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    top: 0;
-    left: 0;
-    position: relative;
-    z-index: 1;
-  }
 #logoNav{
     display: flex;
-    flex-direction:row;
-    justify-content:space-between;
     align-items: center;
-}
-#logo{
-    color:white;
-    font-size: 2.4rem;
-}
-#logo>span{
-    color:#0052FF;
+    justify-content: space-between;
+    background: none;
+    position: fixed;
+    z-index: 2;
+    width: 95%;
+    padding: 2rem 5rem;
+    background: none;
+    transition: all 0.4s ease;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 #navbar>ul>li{
     display: inline;
-    padding-left: 7rem;
+    margin-right: 4rem;
 }
 #navbar>ul>li>a{
     text-decoration: none;
@@ -53,7 +38,22 @@ header{
 #navbar>ul>li>a:hover{
     color:#0052FF;
 }
-
+#mobile-menu{
+    display: none;
+}
+header{
+    background-image: url(images/bg4.jpg);
+    transition: all 0.8s ease;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: auto;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
+  }
 
 main{
     padding-top: 25rem;
@@ -86,70 +86,50 @@ h1{
     color: #0052FF;
 }
 
-/* Second Section */
-#section-2{
-    font-size: 1.6rem;
-    padding: 10rem;
-    display:grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 3%;
-    background-color: white;
+/* Introduction to Dr.Smile */
+#intro{
+    padding:  3rem 5rem;
 }
-.section-2-icon{
-    height: 8rem;
-    width: 8rem;
-}
-.section-2-header{
-    color:#0052FF;
-    font-size: 2.2rem;
-    margin-bottom: 1.6rem;
-    margin-top: 1rem;
+#intro>h2{
+    margin-bottom: 2rem ;
 }
 
-/* Third Section */
-#section-3{
-    padding: 5rem;
-    background-color: #F9F9F9;
+#intro>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-#section-3-text{
-    padding-top: 1.6rem;
+#intro-img{
+    width: 45%;
+    height: 35rem;
+}
+#intro-img>img{
+    object-fit: cover;
+    height: 100%;
+    object-position: 15% 0%;
+}
+#intro-text{
+    width: 50%;
+}
+#intro>div>div>p{
     font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: justify;
 }
-#section-3-grid{
-    padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    column-gap: 4rem;
-    row-gap: 4rem;
-}
-.section-3-box{
-    background-color: white;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-.section-3-icon{
-    height:8rem;
-    width: 8rem;
-}
-.section-3-grid-text{
-    color:#0052FF;
-    font-size: 2.2rem;
-    padding-top: 1.6rem;
-}
-
 /* Fourth Section */
-#section-4{
-    padding: 5rem 6rem;
+#section-4>h2{
+    margin-top: 4rem;
 }
 #section-4-grid{
-    margin-top:5rem;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 4rem;
+    margin-top:2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
 }
 .section-4-box{
-    border: 0.2rem solid #0052FF;
-    padding:3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding:2rem;
+    width: 28%;
     text-align: left;
 }
 .section-4-icon{
@@ -183,18 +163,17 @@ h1{
     padding-top: 5rem ;
     padding-right: 10rem;
     padding-left: 10rem;
+    transition: height 1s ease;
 }
 #section-5-grid{
     margin-top: 5rem;
-    display:grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 8rem;
 }
 #accordion-container{
     text-align: left;
 }
 .accordion-box{
     margin-bottom: 1.6rem;
+   
 }
 .accordion{
     width:100%;
@@ -206,10 +185,12 @@ h1{
     border-radius: 1rem;
     border: 0.1rem solid #0052FF;
     color:#0052FF;
+    
 }
 .panel{
-    display: none;
-    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    transition: height 0.5s ease;
 }
 .panel-text{
     text-align: left;
@@ -236,14 +217,14 @@ h1{
 }
 #section-6-grid{
     padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    column-gap:3rem;
+    display: flex;
+    justify-content: space-between;
 }
 .section-6-box{
-    border: 0.2rem solid #0052FF;
+    /* border: 0.2rem solid #0052FF; */
     border-radius: 1rem;
     padding-bottom: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .section-6-box-image{
  width: 100%;
@@ -270,60 +251,12 @@ h1{
     text-align: left;
 }
 
-/* Seventh Section */
-#section-7{
-    background-image: url("images/Rectangle\ 41.png");
-}
-#section-7-overlay {
-    padding: 5rem 12rem;
-    background-color: rgba(0, 82, 255, 0.5);
-    top: 0;
-    left: 0;
-    position: relative;
-    z-index: 1;
-  }
-#section-7-header{
-    color:white;
-}
-#section-7-image{
-    margin-top: 5rem;
-    margin-bottom: 2.5rem;
-}
-#section-7-text{
-    color:white;
-    margin-bottom: 3rem;
-    font-size: 1.6rem;
-}
-#section-7-ratings{
-    width:fit-content;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4rem;   
-}
-.rating-icon{
-    height:2.8rem;
-    width:2.8rem;
-}
-#section-7-ratings>div>p{
-    color:white;
-    font-size: 1.6rem;
-}
-#section-7-overlay>div>p{
-    font-size: 1.6rem;
-    color: white;
-    margin-bottom: 1rem;
-}
-
 /* Eight Section */
 #section-8{
     padding-left:10rem;
     padding-right: 10rem;
 }
 #section-8-grid{
-    display: grid;
-    grid-template-columns: 48% 48%;
-    column-gap: 5rem;
     margin-top: 5rem;
 }
 #section-8-grid>div>h2{
@@ -337,7 +270,7 @@ label{
     background-color:white;
     padding: 0px 1.5rem;
     font-size: 2rem;
-    z-index: 1;
+    z-index: 0;
     position: relative;
     top:13;
     left: 10;
@@ -350,12 +283,17 @@ input{
     text-align: left;
     border: 1px solid #0052FF;
     border-radius: 10px;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2rem;
     z-index: 0;
 }
-#message{
+textarea{
     height: 15rem;
     border: 1px solid #0052FF;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 #submit{
     font-size: 1.6rem;
@@ -372,66 +310,46 @@ input{
     border: 1px solid #0052FF;
 }
 
-/*Iframe Section */
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:608px;
-    width:1348px;
-}
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:608px;
-    width:1348px;
-}
 
-/*Last Section */
-#last-section{
-    padding:5rem 10rem;
-    text-align: center !important;
+/* Video Section   */
+#video-section{
+    margin-top: 5rem;
+    background-color: #F9F9F9;
+    padding: 3rem 8rem;
 }
-#last-section>p{
-    margin-top: 1.6rem;
-    margin-bottom: 2rem;
-    font-size: 1.6rem;
-}
-#last-section-grid{
-    padding-top: 2rem;
-    display:grid;
-    grid-template-columns: 33% 33% 33%;
-    text-align: center;
-}
-.last-grid-text{
-    margin-left: 2.4rem;
-}
-.last-grid{
+#vid-container{
+    margin-top: 3rem;
     display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain ;
+    scroll-snap-type:x mandatory;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
-.last-grid-icon{
-    height: 4rem;
-    width:4rem;
+#vid-container::-webkit-scrollbar{
+    width: 0;
 }
-.last-grid-text-1{
-    font-size: 2.2rem;
-    margin-bottom: 1.1rem;
-    text-align: left;
+.vid-frame{
+    padding-top: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-right: 5rem;
+    scroll-snap-align: center;
 }
-.last-grid-text-2{
-    font-size: 1.6rem;
-    text-align: left;
-}
-.last-grid-text-2>span{
-    color: #0052FF;
+.vid-frame>p{
+    font-size: 1.8rem;
+    font-weight:700 ;
+    padding: 1rem;
 }
 
 /*Footer*/
 footer{
-    padding: 5rem 15rem;
+    padding: 3rem 8rem;
     background-color: #0052FF;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer>div>p{
     color:white;
@@ -443,12 +361,14 @@ footer>div>p{
     font-weight: 700;
 }
 #socials{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .social-icons{
     height: 2.5rem;
     width: 2.5rem;
+    margin-right: 2rem;
 }
 
 
@@ -456,189 +376,286 @@ footer>div>p{
 
 /*Smaller Screen */
 @media (max-width: 768px){
-    /* Everything */
-    html{
-        font-size: 8px;
-        width: 100vw;
-    }
-
-    /* Logo and Menu */
-    .overlay{
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 5vh;
-    }
-    #logoNav{
-        display:block;
-    }
-    #logo{
-        margin-top: 5vh;
-        margin-left: 10vw;
-        text-align:left;
-        float: left;
-    }
-    #hamburger-menu{
-        position: relative;
-        float: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 6vh;
-        margin-right: 10vw;
-        z-index: 2;
-    }
-    .hamburger-line{
-        background-color: white;
-        height: 4px;
-        width: 30px;
-        border-radius: 5px;
-        transition: all .4s ease-in-out;       
-    }
-    .hamburger-line::before,
-    .hamburger-line::after{
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 4px;
-        border-radius: 5px;
-        background-color: white;
-        transition: all .4s ease-in-out;
-    }
-    .hamburger-line::before{
-        transform: translate(-15px,-8px);
-    }
-    .hamburger-line::after{
-        transform: translate(-15px, 8px);
-    }
-    #hamburger-menu.open .hamburger-line{
-        transform: translateX(-20px);
-        background-color: transparent;
-    }
-    #hamburger-menu.open .hamburger-line::before{
-        transform: rotate(45deg) ;
-    }
-    #hamburger-menu.open .hamburger-line::after{
-        transform: rotate(-45deg);
-    }
-    
-    #navbar.navBarOpen{
-        opacity: 1;
-        transform: translateY(13vh);
-    }
-    #navbar{
-        opacity: 0;
-        position: absolute;
-        width:100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 1;
-        transition: opacity,transform 0.4s ease-in;
-        /*-webkit-transition: transform 1s ease-in;
-        -moz-transition: transform 1s ease-in;
-        -o-transition: transform 1s ease-in;
-        -ms-transition: transform 1s ease-in;*/
-    }
-    #navbar>ul{
-        padding-left: 0;
-    }
-    #navbar>ul>li{
-        display: block;
-        text-align: center;
-        padding-left: 0;
-        margin-top: 2.5rem;
-    }
-    #navbar>ul>li>a{
-        color:#5B5B5B;
+    h2{
         font-size: 2rem;
     }
-
-    /* Top Display */
-    main{
-        padding-top: 14rem;
-        padding-bottom: 5rem;
-        margin-left: 10vw;
-        margin-right: 10vw;
+    /* Everything */
+    #hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 2.4rem;
     }
+    #hamburger-menu>div{
+        background-color: grey;
+        width: 3rem;
+        height: 4px;
+        transition: all 0.4s ease;
+    }
+
+    #logoNav{
+        width: 90%;
+        padding: 1rem 2rem;
+        z-index: 5;
+    }
+    #navbar{
+        display: none;
+    }
+    #mobile-menu{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        background: white;
+        width: 100%;
+        height: 90vh;
+        padding-top: 10rem;
+        opacity: 0;
+        transition: all 0.4s ease;
+        transform: translateY(-100vh);
+    }
+    #mobile-menu>ul{
+        text-align: center;
+    }
+    #mobile-menu>ul>li{
+        margin-bottom: 2rem;
+        list-style-type: none;
+        text-align: left;
+    }
+    #mobile-menu>ul>li>a{
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: var(--purple);
+
+    }
+
+    header{
+        transition: all 0.5s ease;
+        height: 70vh;
+    }
+    .overlay {
+        height: 70vh;
+        z-index: 1;
+      }
     .text1{
-        font-size:3rem;
+        font-size: 4rem;
     }
     h1{
-        font-size:6rem ;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
+        font-size: 6rem;
+        text-align: center;
+    }
+    .text2{
+        font-size: 2rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* Other Sections */
-    #section-2{
-        grid-template-columns: 100%;
-        row-gap: 5rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+    /*Introduction */
+    #intro{
+        padding: 2rem;
     }
-    #section-3-grid{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 20% 20% 20% 20%;
-        column-gap: 2rem;
-        row-gap: 2rem;
+    #intro>div{
+       flex-direction: column;
     }
-    #section-4-grid{
-        grid-template-columns: 100%;
-        row-gap: 2rem;
+    #intro-img{
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 1rem;
     }
-    #section-5-grid{
-        grid-template-columns: 100%;
-        row-gap: 2rem;
-    }
-    #accordion-container{
+    #intro-text{
         width: 100%;
     }
+    #intro>div>div>p{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+
+    /* Fourth Section */
+    #section-4>h2{
+        margin-top: 3rem;
+    }
+    #section-4-grid{
+        margin-top:2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .section-4-box{
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+    .section-4-icon{
+        height:5rem;
+        width:5rem;
+    }
+    .section-4-box>ul>li{
+        font-size: 1.4rem;
+    }
+    .section-4-text-1{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .section-4-text-2{
+        text-align: justify;
+        font-size: 1.4rem;
+    }
+
+/* Sixth Section */
     #section-6{
-        padding: 5rem 5rem;
+        padding: 2rem;
     }
     #section-6-grid{
-        grid-template-columns: 100%;
-        row-gap: 3rem;
+        padding-top: 3rem;
+        flex-direction: column;
     }
+    .section-6-box{
+       margin-bottom: 2rem;
+    }
+    .dr-name{
+        margin-top: 1.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.8rem;
+    }
+    .dr-title{
+        margin-bottom: 3rem;
+        font-size: 1.4rem;
+    }
+    .section-6-schedule{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        font-size: 1.4rem;
+    }
+    .section-6-schedule>div>p{
+        margin-bottom: 1.3rem;
+        text-align: left;
+    }
+
+/* Fifth Section */
+    #section-5{
+        padding-top: 3rem ;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    #section-5-grid{
+        margin-top: 3rem;
+    }
+    .accordion-box{
+        margin-bottom: 1rem;
+    
+    }
+    .accordion{
+        width:100%;
+        text-align: left;
+        margin-right:0;
+        padding: 1rem;
+        font-size: 1.6rem;
+        position: relative;
+        z-index: 1;
+        
+    }
+    .panel{
+        opacity: 0;
+        height: 0;
+        transition: height 0.5s ease;
+    }
+    .panel-text{
+        text-align: left;
+        margin:1rem;
+        font-size: 1.4rem;
+    }
+    #accordion-button{
+        background-color: #0052FF;
+        font-size: 1.6rem;
+        padding: 1.5rem 3rem;
+        color: white;
+        border:none;
+        margin-top: 3rem;
+    }
+    #accordion-button:hover{
+        color: #0052FF;
+        background-color: white;
+        border: 1px solid #0052FF;
+    }
+/* Eight Section */
     #section-8{
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left:2rem;
+        padding-right: 2rem;
     }
     #section-8-grid{
-        grid-template-columns: 100%;
-        row-gap: 2rem;
+        margin-top: 3rem;
     }
-    #submitmobile{
-        text-align: center;
+    #section-8-grid>div>h2{
+        margin-bottom: 3rem;
     }
-    #last-section{
-        padding:5rem 5rem;
+    label{
+        padding: 0px 1.5rem;
+        font-size: 1.8rem;
+
     }
-    #last-section-grid{
-        grid-template-columns: 100%;
-        row-gap: 3rem;
-        text-align: center;
+    input{
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
     }
-    .last-grid{
-        display: block;
+    textarea{
+        height: 10rem;
+        padding: 2rem;
+        font-size: 1.4rem;
+
     }
-    .last-grid-text>p{
-        text-align: center;
+    #submit{
+        font-size: 1.4rem;
+        padding: 1.5rem 3rem;
     }
+
+
+    /* Video Section   */
+    #video-section{
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+    #vid-container{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+    .vid-frame{
+        width: 100%;
+        padding: 0.3rem;
+        border-radius: 0.8rem;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+        margin-right: 2rem;
+    }
+    iframe{
+        width: auto;
+        height: min-content;
+    }
+
+   /*Footer*/
     footer{
-        grid-template-columns: 100%;
-        padding: 5rem 5rem;
+        padding: 2rem;
+        display: block;
     }
     footer>div>p{
         text-align: center;
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
-    #spacer{
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+    #footerlogo{
+        font-size: 2rem;
+        font-weight: 700;
     }
     #socials{
-        text-align: center;
-        column-gap: 1rem;
-        justify-content: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .social-icons{
+        height: 2rem;
+        width: 2rem;
     }
 }
