@@ -403,8 +403,8 @@ footer>div>p{
     }
     #mobile-menu{
         display: block;
-        position: absolute;
-        z-index: 0;
+        position: fixed;
+        z-index: 2;
         background: white;
         width: 100%;
         height: 90vh;
@@ -551,7 +551,7 @@ footer>div>p{
         padding: 1rem;
         font-size: 1.6rem;
         position: relative;
-        z-index: 1;
+        z-index: 0;
         
     }
     .panel{
