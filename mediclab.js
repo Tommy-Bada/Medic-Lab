@@ -76,17 +76,15 @@ accordion[3].addEventListener("click", dropdownThree);
 // let menuButton = document.getElementById("hamburger-menu");
 // menuButton.addEventListener("click", hamburgerMenu);
 
+let mobileMenu = document.querySelector("#mobile-menu");
+let hamburgerLine = document.getElementsByClassName("hamburger-line");
 document.getElementById("hamburger-menu").addEventListener("click", function(){
-    let mobileMenu = document.querySelector("#mobile-menu");
-    let hamburgerLine = document.getElementsByClassName("hamburger-line");
     if(mobileMenu.classList.contains("slidedown") === false ){
         mobileMenu.classList.add("slidedown");
         mobileMenu.style.opacity = 1;
         mobileMenu.style.transform = ("translateY(0vh)");
         hamburgerLine[1].style.width = "2rem";
         hamburgerLine[2].style.width = "1rem";
-
-
     }
     else{
         mobileMenu.classList.remove("slidedown");
@@ -142,3 +140,19 @@ function changeHeaderColor(){
     }
     }
 window.addEventListener("scroll", changeHeaderColor);
+
+let moblileMenuList = document.querySelectorAll(".mobile-menu-list")
+function closeMenu(){
+    mobileMenu.classList.remove("slidedown");
+    mobileMenu.style.opacity = 0;
+    mobileMenu.style.transform = ("translateY(-100vh)");
+    hamburgerLine[1].style.width = "3rem";
+    hamburgerLine[2].style.width = "3rem";
+
+}
+moblileMenuList[0].addEventListener("click", closeMenu)
+moblileMenuList[1].addEventListener("click", closeMenu)
+moblileMenuList[2].addEventListener("click", closeMenu)
+moblileMenuList[3].addEventListener("click", closeMenu)
+moblileMenuList[4].addEventListener("click", closeMenu)
+moblileMenuList[5].addEventListener("click", closeMenu)

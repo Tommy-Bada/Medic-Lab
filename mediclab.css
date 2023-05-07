@@ -6,6 +6,7 @@
 }
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 h2{
     font-size: 3rem;
@@ -341,6 +342,18 @@ textarea{
     font-size: 1.8rem;
     font-weight:700 ;
     padding: 1rem;
+}
+#swipe-left{
+    display: flex;
+    justify-content: center;
+
+}
+#swipe-left>div{
+    background: #0052FF;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.4rem;
 }
 
 /*Footer*/
