@@ -10,6 +10,8 @@ html{
 }
 h2{
     font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 
@@ -161,9 +163,7 @@ h1{
 /* Fifth Section */
 #section-5{
     background-color: #F9F9F9;
-    padding-top: 5rem ;
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding: 5rem 10rem;
     transition: height 1s ease;
 }
 #section-5-grid{
@@ -343,18 +343,112 @@ textarea{
     font-weight:700 ;
     padding: 1rem;
 }
-#swipe-left{
-    display: flex;
-    justify-content: center;
 
+.arrow {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
+    cursor: pointer;
+    max-width: fit-content;
+    margin: 1rem auto;
 }
-#swipe-left>div{
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid #0052FF;
+    border-right: 5px solid #0052FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+
+/* Blog Section   */
+#blog-section{
+    margin-top: 5rem;
+    background-color: white;
+    padding: 3rem 8rem;
+}
+#blog-container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain ;
+    scroll-snap-type:x mandatory;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#blog-container::-webkit-scrollbar{
+    width: 0;
+}
+.article-piece{
+    min-width: 50rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-right: 5rem;
+    scroll-snap-align: center;
+}
+.article-piece>img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 0%;
+}
+.article-piece>div{
+    padding: 1rem;
+    text-align: left;
+}
+.article-piece-title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.article-piece-date{
+    margin-bottom: 1.4rem;
+    text-align: left;
+}
+.article-piece-text{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #101010bf;
+    text-align: justify;
+}
+.article-btn{
     background: #0052FF;
-    border-radius: 50%;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.4rem;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    margin-top: 1rem;
 }
+
 
 /*Footer*/
 footer{
@@ -478,13 +572,19 @@ footer>div>p{
     #intro-text{
         width: 100%;
     }
+    #intro-text>p:nth-child(3){
+        display: none;
+    }
     #intro>div>div>p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
         text-align: justify;
     }
 
     /* Fourth Section */
+    #section-4{
+        padding: 2rem;
+    }
     #section-4>h2{
         margin-top: 3rem;
     }
@@ -546,9 +646,7 @@ footer>div>p{
 
 /* Fifth Section */
     #section-5{
-        padding-top: 3rem ;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding: 3rem 2rem;
     }
     #section-5-grid{
         margin-top: 3rem;
@@ -646,6 +744,38 @@ footer>div>p{
         width: auto;
         height: min-content;
     }
+    
+
+/* Blog Section   */
+    #blog-section{
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+    #blog-container{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .article-piece{
+        min-width: 100%;
+        margin-right: 2rem;
+        scroll-snap-align: center;
+    }
+    .article-piece-title{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    .article-piece-date{
+        margin-bottom: 1.4rem;
+        text-align: left;
+    }
+    .article-piece-text{
+        font-size: 1.5rem;
+    }
+    .article-piece>img{
+        height: 18rem;
+    }
+
 
    /*Footer*/
     footer{
