@@ -233,3 +233,13 @@ accordion[6].addEventListener("click", dropdownSix);
 accordion[7].addEventListener("click", dropdownSeven);
 accordion[8].addEventListener("click", dropdownEight);
 accordion[9].addEventListener("click", dropdownNine);
+
+
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault()
+    alert(`Sorry ${document.getElementById("fullname").value}, we have not started accepting responses.`)
+    document.getElementById("fullname").value = ""
+    document.getElementById("email").value = ""
+    document.querySelector("textarea").value = ""
+    
+})
