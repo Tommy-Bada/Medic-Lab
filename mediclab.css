@@ -230,6 +230,14 @@ h1{
 .section-6-box-image{
  width: 100%;
 }
+.doc-img{
+    width: 40rem;
+    border: #0052FF80 2px solid;
+    border-radius: 1rem;
+}
+.doc-img>img{
+    border-radius: 1rem;
+}
 .dr-name{
     margin-top: 2.4rem;
     margin-bottom: 0.8rem;
@@ -624,6 +632,9 @@ footer>div>p{
     }
     .section-6-box{
        margin-bottom: 2rem;
+    }
+    .doc-img{
+        width: 100%;
     }
     .dr-name{
         margin-top: 1.8rem;
